@@ -1,0 +1,261 @@
+/* Common Styles */
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+    /* Hide header menu and background element in mobile view */
+    .header-menu {
+        font-size: 14px; /* Shrink font size */
+    }
+
+    .Bg-element-1 {
+        display: none;
+    }
+
+    /* Adjust text size and position in Section 1 for mobile view */
+    .sec1iamsachin {
+        font-size: 3rem; /* Adjust font size */
+    }
+
+    .sec1fullstackdev {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+
+    #sec1-res-bt {
+        margin-top: 20px; /* Adjust margin */
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Section 1 */
+#section1 {
+    background-color: #152c76;
+    display: grid;
+    height: 100vh;
+    position: relative; /* Added */
+    overflow: hidden; /* Added */
+}
+
+/* Background Image Animation */
+.Bg-element-1 {
+    display: inline;
+    position: absolute;
+    right: 0px;
+    max-width: 100%; /* Ensure background element scales with viewport */
+    animation: fadeIn 1s ease; /* Added */
+}
+
+/* Title Text Styles */
+.sec1iamsachin {
+    color: aliceblue;
+    font-family: kanit;
+    font-size: 5rem;
+    position: absolute;
+    left: 150px;
+    top: 300px;
+    animation: fadeIn 1s ease; /* Added */
+}
+
+.sec1fullstackdev {
+    color: antiquewhite;
+    position: absolute;
+    left: 150px;
+    top: 400px;
+    animation: fadeIn 1s ease; /* Added */
+}
+
+/* Button Styles */
+#sec1-res-bt {
+    position: absolute;
+    left: 150px;
+    border-style: none;
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 100px;
+    color: #152c76;
+    background-color: aliceblue;
+    font-size: 1.1rem;
+    font-weight: 600;
+    animation: fadeIn 1s ease; /* Added */
+}
+
+#sec1-res-bt > a {
+    text-decoration: none;
+}
+
+/* Header */
+.header-menu {
+    background-color: #152c76;
+    display: inline;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 16px; /* Increase font size */
+}
+
+#head-menu {
+    color: aliceblue;
+    margin-left: 10px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Section 2 */
+#section2 {
+    height: auto; /* Remove fixed height */
+    min-height: calc(100vh - 20px); /* Ensure minimum height to prevent overlap */
+    padding-bottom: 20px; /* Add some bottom padding */
+    text-align: center;
+}
+
+#section2 > div > img {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#section2 > div > h3 {
+    font-family: 'Niconne', cursive;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #38B6FF;
+}
+
+#section2 > div > p {
+    font-size: 1.2rem;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: 400;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 30px;
+}
+
+#sec2-res-bt {
+    border-style: none;
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #152c76;
+    margin-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+#sec2-res-bt > a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Section 3 */
+#section3 {
+    background-color: #EFF3FF;
+    min-height: 100vh; /* Ensure Section 3 takes up at least 100% of the viewport height */
+    padding-bottom: 20px; /* Add some bottom padding */
+    text-align: left;
+}
+
+.sec-3-body {
+    display: grid;
+    grid-template-rows: 150px auto;
+    grid-template-columns: 1fr 1fr;
+}
+
+#sec-3-heading {
+    margin-left: 10vh;
+    margin-top: 10vh;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+#skills {
+    margin-top: 10px;
+    margin-left: 10vh;
+    font-size: 1.5rem;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+#experience > ul {
+    list-style: none;
+    font-weight: 400;
+    margin-left: 6vh;
+    margin-top: 10px;
+}
+
+/* Section 4 */
+#section4 {
+    height: 100vh;
+}
+
+.sec-4-body {
+    position: absolute;
+    left: 100px;
+    margin-top: 70px;
+}
+
+.sec-4-body > h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.sec-4-body > h4 {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 1.9rem;
+    letter-spacing: 2px;
+}
+
+#sec4-contact-btn {
+    border-style: none;
+    border-radius: 40px;
+    font-size: 2rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 50px;
+    background-image: linear-gradient(to bottom, #5DE0E6, #004AAD);
+}
+
+#sec4-contact-btn > a {
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    margin-top: 80vh;
+    width: 100%;
+    height: 20vh;
+    background-color: #152c76;
+}
+
+.footer {
+    word-spacing: 50px;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    list-style: none;
+    font-weight: 600;
+}
+.footer > a {
+    text-decoration: none;
+    color: white;
+}
+
+footer > p {
+    color: #95A4D5;
+    text-align: center;
+    margin-top: 25px;
+}
